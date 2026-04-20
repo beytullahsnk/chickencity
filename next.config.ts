@@ -2,10 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // AVIF désactivé volontairement — WebP uniquement pour garantir que ce qu'on
-    // voit dans /admin-rotate corresponde exactement à ce que servent les pages
-    // publiques. Next ne conserve pas d'AVIF sidecar ni ne génère d'AVIF à la
-    // volée qui pourrait désyncher avec les rotations du WebP source.
+    // WebP only. AVIF a été testé plusieurs fois mais causait des rendus
+    // "de travers" non reproductibles en local (possible bug d'encodage sharp
+    // ou cache navigateur AVIF tenace). WebP suffit amplement : supporté par
+    // Safari 14+ et tous les navigateurs modernes, gain ~85% vs PNG/JPG.
     formats: ["image/webp"],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
