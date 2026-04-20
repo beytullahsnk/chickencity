@@ -1,0 +1,198 @@
+export interface CityData {
+  slug: string;
+  name: string;
+  metaTitle: string;
+  metaDescription: string;
+  deliveryFee: string;
+  minimumOrder: string;
+  estimatedTime: string;
+  heroText: string;
+  menuIntro: string;
+}
+
+export const cities: CityData[] = [
+  {
+    slug: "mer",
+    name: "Mer",
+    metaTitle: "Livraison Fast-Food Mer (41500) : Burgers, Tacos, Tenders, Kebab",
+    metaDescription: "Livraison rapide \u00e0 Mer (41500) en 30 minutes. Burgers, tacos, tenders fait maison, salades, bowls. Halal et options v\u00e9g\u00e9tariennes. Commandez en ligne !",
+    deliveryFee: "2,90\u20ac",
+    minimumOrder: "15\u20ac",
+    estimatedTime: "30 minutes",
+    heroText: "Vous habitez \u00e0 Mer ou passez par la Place de l\u0027\u00c9glise ? Chicken City, votre fast-food local install\u00e9 en plein centre, vous livre en 30 minutes vos burgers, tacos et tenders fait maison. Commandez en ligne et profitez du tarif le plus bas de notre zone (2,90\u20ac d\u00e8s 15\u20ac).",
+    menuIntro: "Au c\u0153ur de Mer, nous pr\u00e9parons chaque commande \u00e0 la minute : burgers garnis \u00e0 chaud, tacos g\u00e9n\u00e9reux sauce fromag\u00e8re maison, poulet pan\u00e9 croustillant et viandes halal certifi\u00e9es. Livraison express dans tous les quartiers : centre-bourg, Petite Garenne, Z.A. des Ouches.",
+  },
+  {
+    slug: "suevres",
+    name: "Su\u00e8vres",
+    metaTitle: "Livraison Fast-Food Su\u00e8vres : Burgers, Tacos, Poulet Fait Maison",
+    metaDescription: "Livraison Chicken City \u00e0 Su\u00e8vres en 35 min : burgers maison, tacos fromagers, poulet pan\u00e9. D\u00e8s 25\u20ac d\u0027achat, 4,90\u20ac de frais. Commandez en ligne !",
+    deliveryFee: "4,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Village m\u00e9di\u00e9val en bord de Loire, Su\u00e8vres m\u00e9rite aussi un bon repas livr\u00e9 chez vous. Chicken City dessert toute la commune (centre historique, La Chapelle-Saint-Pierre, Le Carroir) en 35 minutes. Id\u00e9al pour vos soir\u00e9es en famille ou apr\u00e8s une journ\u00e9e de travail.",
+    menuIntro: "Nos plats voyagent bien : emballages isothermes, livreurs locaux, cuisson juste avant le d\u00e9part. Burgers City, tacos 1 \u00e0 3 viandes, bowls, salades et menus enfants arrivent chauds \u00e0 Su\u00e8vres, m\u00eame aux adresses les plus excentr\u00e9es comme la zone des Noues.",
+  },
+  {
+    slug: "muides-sur-loire",
+    name: "Muides-sur-Loire",
+    metaTitle: "Livraison Fast-Food Muides-sur-Loire : Burgers, Tacos, Kebab",
+    metaDescription: "Livraison Chicken City \u00e0 Muides-sur-Loire en 35 min. Burgers 100g ou 180g, tacos frites, tenders maison. Commande d\u00e8s 25\u20ac d\u0027achat.",
+    deliveryFee: "4,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Entre le ch\u00e2teau de Chambord et la Loire, Muides-sur-Loire profite pleinement de nos livraisons. Camping, g\u00eetes, r\u00e9sidences : nos livreurs connaissent tous les chemins. Comptez 35 minutes pour recevoir votre commande chaude, croustillante et g\u00e9n\u00e9reusement garnie.",
+    menuIntro: "Sur le camping de Muides en \u00e9t\u00e9, chez vous en bord de Loire le reste de l\u0027ann\u00e9e : nos burgers, tacos maison et menus familiaux (jusqu\u0027\u00e0 33 hot wings + 3 frites) r\u00e9galent les petites comme les grandes tabl\u00e9es. Bouteille 1,5L offerte d\u00e8s un menu familial.",
+  },
+  {
+    slug: "courbouzon",
+    name: "Courbouzon",
+    metaTitle: "Livraison Fast-Food Courbouzon : Burgers, Tacos, Tenders Maison",
+    metaDescription: "Chicken City livre \u00e0 Courbouzon en 35 min. Burgers artisanaux, tacos g\u00e9n\u00e9reux, poulet fait maison. 4,90\u20ac de frais d\u00e8s 25\u20ac.",
+    deliveryFee: "4,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "\u00c0 Courbouzon, pas besoin de faire 15 km pour un bon fast-food : Chicken City vous livre directement \u00e0 domicile, du centre-bourg aux hameaux. Service fiable et rapide, m\u00eame aux heures de pointe du vendredi soir.",
+    menuIntro: "Carte compl\u00e8te disponible \u00e0 Courbouzon : 10 recettes de burgers, 3 formats de tacos, 8 sortes de rolls, salades fra\u00eeches et desserts (tiramisu, tarte daim). Option halal sur toutes les viandes, sauces maison incluses.",
+  },
+  {
+    slug: "saint-dye",
+    name: "Saint-Dy\u00e9",
+    metaTitle: "Livraison Fast-Food Saint-Dy\u00e9-sur-Loire : Burgers, Tacos, Bowls",
+    metaDescription: "Livraison Chicken City \u00e0 Saint-Dy\u00e9-sur-Loire en 40 min. Tenders maison, burgers, tacos, salades. 5,90\u20ac de frais d\u00e8s 25\u20ac.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "Port historique de Saint-Dy\u00e9-sur-Loire, maisons \u00e0 colombage, quais de la Loire : savourez un repas Chicken City chez vous, en 40 minutes chrono. Nos livreurs couvrent la commune enti\u00e8re y compris Montli\u00e9vault et les chemins touristiques.",
+    menuIntro: "Que vous soyez en gite touristique ou r\u00e9sident permanent, nos plats vous atteignent chauds gr\u00e2ce \u00e0 nos emballages isothermes. Sp\u00e9cialit\u00e9s maison : tenders pan\u00e9s \u00e0 la main, sauce fromag\u00e8re et blanche maison, chicken curry fait maison.",
+  },
+  {
+    slug: "la-chapelle-saint-martin",
+    name: "La Chapelle-Saint-Martin-en-Plaine",
+    metaTitle: "Livraison Fast-Food La Chapelle-Saint-Martin-en-Plaine",
+    metaDescription: "Chicken City livre \u00e0 La Chapelle-Saint-Martin-en-Plaine en 40 min. Burgers, tacos, poulet fait maison. 5,90\u20ac d\u00e8s 25\u20ac.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "En plein c\u0153ur de la Beauce, La Chapelle-Saint-Martin-en-Plaine est desservie quotidiennement par nos livreurs. 40 minutes apr\u00e8s votre commande, vos burgers gourmands et tacos garnis arrivent pr\u00eats \u00e0 d\u00e9guster.",
+    menuIntro: "Entre amis au stade, en famille le dimanche ou pour une pause d\u00e9jeuner express, notre carte r\u00e9pond \u00e0 toutes les envies : burgers 100g ou 180g, tacos de 1 \u00e0 3 viandes, city box (4 tenders + 5 hot wings), salades et paninis.",
+  },
+  {
+    slug: "villexanton",
+    name: "Villexanton",
+    metaTitle: "Livraison Fast-Food Villexanton : Burgers, Tacos, Rolls Maison",
+    metaDescription: "Livraison Chicken City \u00e0 Villexanton en 35 min. Tenders maison, chicken curry, rolls vari\u00e9s. 5,90\u20ac d\u00e8s 25\u20ac d\u0027achat.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Villexanton, commune agricole paisible, n\u0027est pas oubli\u00e9e : Chicken City vous livre en 35 minutes nos meilleures sp\u00e9cialit\u00e9s. Id\u00e9al apr\u00e8s une longue journ\u00e9e dans les champs ou pour r\u00e9unir la famille autour d\u0027un bon repas rapide.",
+    menuIntro: "Notre sp\u00e9cialit\u00e9 \u00e0 Villexanton : les rolls fait maison. Roll chicken tenders, curry, fromag\u00e8re, ch\u00e8vre-miel, tikka, cordon bleu ou am\u00e9ricain. Tous servis avec frites et boisson 33cl \u00e0 1\u20ac seulement.",
+  },
+  {
+    slug: "avaray",
+    name: "Avaray",
+    metaTitle: "Livraison Fast-Food Avaray : Burgers, Tacos, Poulet Maison",
+    metaDescription: "Chicken City livre \u00e0 Avaray en 35 min, en bord de Loire. Burgers artisanaux, tacos, tenders. Tarif 5,90\u20ac d\u00e8s 25\u20ac d\u0027achat.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Avaray et son bord de Loire m\u00e9ritent un vrai fast-food de qualit\u00e9. Chicken City livre toute la commune en 35 minutes : burgers gourmands, tacos sauce fromag\u00e8re maison, et poulet pan\u00e9 frais du jour. Confort et saveurs \u00e0 domicile.",
+    menuIntro: "D\u00e9couvrez nos menus familiaux id\u00e9aux pour les grandes tabl\u00e9es d\u0027Avaray : jusqu\u0027\u00e0 20 hot wings + 10 tenders + 4 frites, bouteille 1,5L offerte. Menus enfants avec jouet Filou et Caprisun inclus.",
+  },
+  {
+    slug: "lestiou",
+    name: "Lestiou",
+    metaTitle: "Livraison Fast-Food Lestiou : Burgers, Tacos, Tenders Fait Maison",
+    metaDescription: "Livraison Chicken City \u00e0 Lestiou en 35 min. Burgers, tacos, poulet pan\u00e9 maison et sauces artisanales. 5,90\u20ac d\u00e8s 25\u20ac.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Petit village tranquille, Lestiou profite d\u0027une livraison express Chicken City. 35 minutes suffisent pour que vos burgers chauds, tacos g\u00e9n\u00e9reux et tenders croustillants arrivent chez vous, partout dans le bourg.",
+    menuIntro: "Pour Lestiou, nous recommandons nos grosses formules : burger 180, triple burger, city burger (tenders + steak), tacos 3 viandes. Tous nos plats sont halal certifi\u00e9s et pr\u00e9par\u00e9s dans nos cuisines \u00e0 Mer.",
+  },
+  {
+    slug: "josnes",
+    name: "Josnes",
+    metaTitle: "Livraison Fast-Food Josnes : Burgers, Tacos, Bowls Halal",
+    metaDescription: "Chicken City livre \u00e0 Josnes en 40 min. Burgers, tacos, tenders maison, menus familiaux. 6,90\u20ac d\u00e8s 35\u20ac d\u0027achat.",
+    deliveryFee: "6,90\u20ac",
+    minimumOrder: "35\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "Commune active au c\u0153ur de la Beauce, Josnes compte parmi nos destinations r\u00e9guli\u00e8res. En 40 minutes, votre commande arrive chaude et emball\u00e9e avec soin. Livraison assur\u00e9e m\u00eame dans les hameaux environnants.",
+    menuIntro: "\u00c0 Josnes, la commande minimum est de 35\u20ac : id\u00e9al pour les familles et groupes. Combinez burgers, tacos, bowls et sides pour un festin complet. Viandes halal certifi\u00e9es, sauce fromag\u00e8re maison et tenders pan\u00e9s chaque matin.",
+  },
+  {
+    slug: "nouan-sur-loire",
+    name: "Nouan-sur-Loire",
+    metaTitle: "Livraison Fast-Food Nouan-sur-Loire : Burgers, Tacos Maison",
+    metaDescription: "Livraison Chicken City \u00e0 Nouan-sur-Loire en 40 min. Burgers, tacos, tenders, rolls. Tarif 5,90\u20ac d\u00e8s 25\u20ac d\u0027achat.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "En bord de Loire, Nouan-sur-Loire attire touristes et r\u00e9sidents gourmands. Chicken City vous livre en 40 minutes vos burgers fait maison, tacos g\u00e9n\u00e9reux et poulet pan\u00e9 croustillant, directement \u00e0 domicile.",
+    menuIntro: "Profitez des bords de Loire avec un bon repas \u00e0 domicile. Nos rolls fait maison (chicken, curry, tikka) et nos burgers artisanaux (180g, triple, gourmet avec bacon) sont les stars de la carte. Sauces maison : blanche, fromag\u00e8re, algerienne, samoura\u00ef.",
+  },
+  {
+    slug: "talcy",
+    name: "Talcy",
+    metaTitle: "Livraison Fast-Food Talcy : Burgers, Tacos Fait Maison",
+    metaDescription: "Chicken City livre \u00e0 Talcy en 40 min, pr\u00e8s du ch\u00e2teau. Burgers, tacos, tenders maison. 6,90\u20ac d\u00e8s 35\u20ac d\u0027achat.",
+    deliveryFee: "6,90\u20ac",
+    minimumOrder: "35\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "\u00c0 Talcy, pr\u00e8s du c\u00e9l\u00e8bre ch\u00e2teau Renaissance, Chicken City vous livre en 40 minutes. Apr\u00e8s une visite, rien de mieux qu\u0027un bon burger ou tacos livr\u00e9 chaud chez vous ou au g\u00eete. Service soign\u00e9 et rapide.",
+    menuIntro: "La commande minimum est de 35\u20ac \u00e0 Talcy, parfait pour les familles ou groupes d\u0027amis. Tentez notre menu familial C (25 hot wings + 2 frites) ou F (20 hot wings + 10 tenders + 4 frites), bouteille 1,5L offerte.",
+  },
+  {
+    slug: "saint-laurent",
+    name: "Saint-Laurent-Nouan",
+    metaTitle: "Livraison Fast-Food Saint-Laurent-Nouan : Burgers, Tacos, Kebab",
+    metaDescription: "Chicken City livre \u00e0 Saint-Laurent-Nouan en 40 min. Burgers fait maison, tacos, tenders, salades. 6,90\u20ac d\u00e8s 35\u20ac d\u0027achat.",
+    deliveryFee: "6,90\u20ac",
+    minimumOrder: "35\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "Saint-Laurent-Nouan, commune dynamique avec sa centrale et ses quartiers r\u00e9sidentiels, fait partie de nos zones de livraison cl\u00e9s. En 40 minutes, nos livreurs couvrent tout le territoire : Nouan, La B\u00e9ch\u00e9e, Forge-les-Eaux.",
+    menuIntro: "Apr\u00e8s une journ\u00e9e de travail ou en soir\u00e9e en famille, nos burgers 180g, tacos viandes halal et tenders pan\u00e9s maison vous attendent. Commande minimum 35\u20ac : combinez plusieurs plats et profitez de la bouteille 1,5L offerte d\u00e8s un menu familial.",
+  },
+  {
+    slug: "menars",
+    name: "Menars",
+    metaTitle: "Livraison Fast-Food Menars : Burgers, Tacos, Poulet Maison",
+    metaDescription: "Livraison Chicken City \u00e0 Menars en 35 min, pr\u00e8s du ch\u00e2teau. Burgers, tacos, tenders fait maison. 6,90\u20ac d\u00e8s 35\u20ac.",
+    deliveryFee: "6,90\u20ac",
+    minimumOrder: "35\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Menars et son ch\u00e2teau marquent le paysage ligerien. Pour vos soir\u00e9es entre amis ou en famille, Chicken City livre en 35 minutes nos meilleurs burgers, tacos et poulet maison. R\u00e9sidence, g\u00eete ou chambre d\u0027h\u00f4te, nos livreurs connaissent la commune.",
+    menuIntro: "Notre best-seller \u00e0 Menars : la City Box (4 tenders + 5 hot wings), parfaite \u00e0 partager. Compl\u00e9tez avec des onion rings, mozza sticks ou japanoles, et finissez par un tiramisu maison ou une tarte daim.",
+  },
+  {
+    slug: "seris",
+    name: "S\u00e9ris",
+    metaTitle: "Livraison Fast-Food S\u00e9ris : Burgers, Tacos Halal Fait Maison",
+    metaDescription: "Chicken City livre \u00e0 S\u00e9ris en 35 min. Burgers, tacos, tenders maison, menu enfants. 5,90\u20ac d\u00e8s 25\u20ac d\u0027achat.",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "35 minutes",
+    heroText: "Petit village champ\u00eatre, S\u00e9ris b\u00e9n\u00e9ficie elle aussi de la livraison Chicken City. 35 minutes suffisent pour que nos plats arrivent frais et chauds chez vous, peu importe votre adresse dans la commune.",
+    menuIntro: "Pour les enfants de S\u00e9ris, notre menu enfant est imbattable : 4 tenders + frites + Caprisun + Petit Filou pour 7,90\u20ac. Pour les adultes, les burgers gourmets avec bacon et cornichons font l\u0027unanimit\u00e9. Viandes halal, sauces maison incluses.",
+  },
+  {
+    slug: "concriers",
+    name: "Concriers",
+    metaTitle: "Livraison Fast-Food Concriers (41370) : Burgers, Tacos, Tenders",
+    metaDescription: "Livraison Chicken City \u00e0 Concriers (41370) en 40 min. Burgers, tacos, poulet fait maison, viandes halal. 5,90\u20ac d\u00e8s 25\u20ac d\u0027achat. Commandez en ligne !",
+    deliveryFee: "5,90\u20ac",
+    minimumOrder: "25\u20ac",
+    estimatedTime: "40 minutes",
+    heroText: "Commune rurale paisible du Loir-et-Cher, Concriers (41370) est d\u00e9sormais desservie par Chicken City. En 40 minutes, nos livreurs apportent jusqu\u0027\u00e0 votre porte burgers gourmands, tacos g\u00e9n\u00e9reux et poulet pan\u00e9 maison, pr\u00e9par\u00e9s \u00e0 la commande dans nos cuisines \u00e0 Mer.",
+    menuIntro: "De Beauvilliers \u00e0 Villetrun, toute la commune de Concriers profite de notre carte compl\u00e8te : burgers 100g ou 180g, tacos 1 \u00e0 3 viandes halal, rolls fait maison, menus familiaux (bouteille 1,5L offerte), menu enfant avec Petit Filou. Qualit\u00e9 et fra\u00eecheur garanties, m\u00eame en livraison.",
+  },
+];
+
+export function getCityBySlug(slug: string): CityData | undefined {
+  return cities.find((city) => city.slug === slug);
+}
+
+export function getAllCitySlugs(): string[] {
+  return cities.map((city) => city.slug);
+}

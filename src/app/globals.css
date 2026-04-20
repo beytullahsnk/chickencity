@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Jaune - couleur PRINCIPALE (boutons, highlights, CTA) */
+  --color-primary: #ffc045;
+  --color-primary-dark: #e6a830;
+  --color-primary-light: #ffd580;
+  /* Rouge - sections fortes, hero, accents */
+  --color-accent: #cc0000;
+  --color-accent-dark: #a30000;
+  --color-accent-light: #e63333;
+  /* Noir - texte, footer */
+  --color-secondary: #1a1a1a;
+  --color-secondary-light: #333333;
+  /* Fonds */
+  --color-background: #ffffff;
+  --color-background-warm: #fff8ed;
+  --color-background-dark: #1a1a1a;
+  /* Texte */
+  --color-foreground: #1a1a1a;
+  --color-foreground-muted: #6b7280;
+  /* Polices */
+  --font-sans: var(--font-montserrat);
+  --font-display: var(--font-titan-one);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GloreFi order button styles */
+[data-glf-cuid][data-glf-ruid] {
+  cursor: pointer;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-dark);
+}
+
+/* Hide scrollbar for nav */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
