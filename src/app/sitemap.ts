@@ -37,8 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${BASE_URL}/menu`,
-      lastModified: mtimeOf("menu/page.tsx"),
+      url: `${BASE_URL}/menus`,
+      lastModified: mtimeOf("menus/page.tsx"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

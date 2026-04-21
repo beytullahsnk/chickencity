@@ -102,7 +102,7 @@ export function HeroSection() {
                 className="!px-8 !py-3.5 !text-sm"
               />
               <Link
-                href="/menu"
+                href="/menus"
                 className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider border-2 border-secondary text-secondary transition-all duration-300 hover:bg-secondary hover:text-white"
               >
                 Voir le menu

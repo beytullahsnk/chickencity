@@ -9,7 +9,7 @@ import { OrderButton } from "@/components/ui/OrderButton";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
-  { href: "/menu", label: "Menu" },
+  { href: "/menus", label: "Menu" },
   { href: "/livraison", label: "Livraison" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },

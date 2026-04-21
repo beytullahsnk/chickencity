@@ -30,7 +30,7 @@ export default function NotFound() {
             Retour {"\u00e0"} l{"'"}accueil
           </Link>
           <Link
-            href="/menu"
+            href="/menus"
             className="inline-flex items-center justify-center font-bold uppercase tracking-wider px-8 py-3 rounded-full text-sm border-2 border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-300"
           >
             Voir le menu

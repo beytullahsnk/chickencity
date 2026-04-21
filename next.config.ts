@@ -25,10 +25,36 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-      // Old WordPress livraison URLs -> new format
+      // /menu → /menus (ancien slug)
+      {
+        source: "/menu",
+        destination: "/menus",
+        permanent: true,
+      },
+      {
+        source: "/menu/:path*",
+        destination: "/menus/:path*",
+        permanent: true,
+      },
+      // Old city slugs (raccourcis) → new full slugs
+      {
+        source: "/livraison/la-chapelle-saint-martin",
+        destination: "/livraison/la-chapelle-saint-martin-en-plaine",
+        permanent: true,
+      },
       {
         source: "/livraison/la-chapelle-saint-martin/",
-        destination: "/livraison/la-chapelle-saint-martin",
+        destination: "/livraison/la-chapelle-saint-martin-en-plaine",
+        permanent: true,
+      },
+      {
+        source: "/livraison/saint-laurent",
+        destination: "/livraison/saint-laurent-nouan",
+        permanent: true,
+      },
+      {
+        source: "/livraison/saint-laurent/",
+        destination: "/livraison/saint-laurent-nouan",
         permanent: true,
       },
       // WordPress legal pages

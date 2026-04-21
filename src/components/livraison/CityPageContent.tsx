@@ -84,7 +84,7 @@ export function CityPageContent({ city, faqs }: { city: CityData; faqs: FAQ[] })
           <p className="text-center text-foreground-muted mb-4">Consultez notre menu complet et passez votre commande en ligne d{"\u00e8"}s maintenant !</p>
           <div className="text-center">
             <Link
-              href="/menu"
+              href="/menus"
               className="inline-flex items-center justify-center font-bold uppercase tracking-wider px-8 py-3 rounded-full text-sm transition-all duration-300 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white"
             >
               Voir le Menu →

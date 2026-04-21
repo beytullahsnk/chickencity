@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // Entry point pour Plesk Node.js (Phusion Passenger).
 // Lance Next.js en mode production sur le port fourni par Plesk.
+// CommonJS intentionnel — Phusion Passenger préfère require() sur les fichiers
+// d'entrée, surtout sans "type": "module" dans package.json.
 
 const { createServer } = require("http");
 const { parse } = require("url");

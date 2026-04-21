@@ -67,7 +67,7 @@ export const cities: CityData[] = [
     menuIntro: "Que vous soyez en gite touristique ou r\u00e9sident permanent, nos plats vous atteignent chauds gr\u00e2ce \u00e0 nos emballages isothermes. Sp\u00e9cialit\u00e9s maison : tenders pan\u00e9s \u00e0 la main, sauce fromag\u00e8re et blanche maison, chicken curry fait maison.",
   },
   {
-    slug: "la-chapelle-saint-martin",
+    slug: "la-chapelle-saint-martin-en-plaine",
     name: "La Chapelle-Saint-Martin-en-Plaine",
     metaTitle: "Livraison Fast-Food La Chapelle-Saint-Martin-en-Plaine",
     metaDescription: "Chicken City livre \u00e0 La Chapelle-Saint-Martin-en-Plaine en 40 min. Burgers, tacos, poulet fait maison. 5,90\u20ac d\u00e8s 25\u20ac.",
@@ -144,7 +144,7 @@ export const cities: CityData[] = [
     menuIntro: "La commande minimum est de 35\u20ac \u00e0 Talcy, parfait pour les familles ou groupes d\u0027amis. Tentez notre menu familial C (25 hot wings + 2 frites) ou F (20 hot wings + 10 tenders + 4 frites), bouteille 1,5L offerte.",
   },
   {
-    slug: "saint-laurent",
+    slug: "saint-laurent-nouan",
     name: "Saint-Laurent-Nouan",
     metaTitle: "Livraison Fast-Food Saint-Laurent-Nouan : Burgers, Tacos, Kebab",
     metaDescription: "Chicken City livre \u00e0 Saint-Laurent-Nouan en 40 min. Burgers fait maison, tacos, tenders, salades. 6,90\u20ac d\u00e8s 35\u20ac d\u0027achat.",

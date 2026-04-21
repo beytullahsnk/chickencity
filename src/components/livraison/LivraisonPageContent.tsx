@@ -148,7 +148,7 @@ export function LivraisonPageContent({ faqs }: { faqs: FAQ[] }) {
 
           <div className="text-center mt-10">
             <Link
-              href="/menu"
+              href="/menus"
               className="inline-flex items-center justify-center font-bold uppercase tracking-wider px-8 py-3 rounded-full text-sm transition-all duration-300 border-2 border-secondary text-secondary hover:bg-secondary hover:text-white"
             >
               Voir le menu →
