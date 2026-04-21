@@ -99,9 +99,22 @@ export default function RootLayout({
     >
       <GoogleTagManager gtmId={GTM_ID} />
       <head>
-        {/* Perf: preconnect to GloreFi CDN to save ~150ms on first order click */}
-        <link rel="preconnect" href="https://www.fbgcdn.com" />
+        {/* Perf: preconnect to GloreFi CDN to save ~150ms on first order click.
+            crossOrigin="anonymous" pour que le preconnect soit réutilisable par
+            le script ewm2.js qui charge en CORS. */}
+        <link
+          rel="preconnect"
+          href="https://www.fbgcdn.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://www.fbgcdn.com" />
+        {/* LCP desktop: bg-hero.webp (CSS background du Hero) */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/bg-hero.webp"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -118,13 +118,15 @@ export function HeroSection() {
             className="order-1 lg:order-2"
           >
             <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/40 aspect-[4/3] relative">
-              {/* Poster image (toujours rendu pour LCP rapide) */}
+              {/* Poster image (toujours rendu pour LCP rapide). fetchPriority
+                  explicite car c'est l'élément LCP sur mobile. */}
               <Image
                 src="/images/hero-poster.webp"
                 alt="Chicken City Mer — burgers, tacos et poulet fait maison"
                 fill
                 sizes="(max-width: 1024px) 90vw, 50vw"
                 priority
+                fetchPriority="high"
                 className={`object-cover transition-opacity duration-500 ${
                   loadVideo ? "opacity-0" : "opacity-100"
                 }`}

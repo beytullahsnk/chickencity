@@ -14,7 +14,7 @@ const gridItems = [
   {
     label: "Tenders & Wings",
     title: "Poulet fait maison",
-    image: "/images/gallery/poulet.gif",
+    image: "/images/gallery/poulet.webp",
     alt: "Tenders et Wings Fait Maison | Poulet Frais Chicken City Mer",
     large: false,
   },
