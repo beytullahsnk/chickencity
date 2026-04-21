@@ -107,20 +107,20 @@ export function CityPageContent({ city, faqs }: { city: CityData; faqs: FAQ[] })
 
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Prix circle */}
-            <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="flex justify-center">
-              <div className="relative">
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} className="flex justify-center px-4 sm:px-0">
+              <div className="relative w-full max-w-[280px] sm:max-w-[360px]">
                 <Image
                   src="/images/delivery-kitchen.webp"
                   alt={`Livraison ${city.name}`}
                   width={360}
                   height={480}
-                  sizes="(max-width: 768px) 80vw, 360px"
-                  className="rounded-2xl shadow-xl object-cover"
+                  sizes="(max-width: 640px) 80vw, 360px"
+                  className="rounded-2xl shadow-xl object-cover w-full h-auto"
                 />
-                <div className="absolute -bottom-6 -right-6 rounded-full w-28 h-28 flex flex-col items-center justify-center shadow-xl bg-primary">
-                  <span className="font-display text-sm text-secondary">{city.name}</span>
-                  <span className="font-display text-2xl text-secondary">{city.deliveryFee}</span>
-                  <span className="text-[10px] font-semibold text-secondary/60">d{"\u00e8"}s {city.minimumOrder}</span>
+                <div className="absolute -bottom-3 -right-3 sm:-bottom-6 sm:-right-6 rounded-full w-24 h-24 sm:w-28 sm:h-28 flex flex-col items-center justify-center shadow-xl bg-primary px-2 text-center">
+                  <span className="font-display text-xs sm:text-sm text-secondary leading-tight">{city.name}</span>
+                  <span className="font-display text-xl sm:text-2xl text-secondary">{city.deliveryFee}</span>
+                  <span className="text-[9px] sm:text-[10px] font-semibold text-secondary/60">d{"\u00e8"}s {city.minimumOrder}</span>
                 </div>
               </div>
             </motion.div>

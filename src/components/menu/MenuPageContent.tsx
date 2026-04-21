@@ -265,8 +265,8 @@ export function MenuPageContent() {
         </div>
       </section>
 
-      {/* Nav sticky — fond blanc, compact */}
-      <nav className="sticky top-[80px] z-30 bg-white/95 backdrop-blur-md border-b border-gray-100">
+      {/* Nav sticky — fond blanc, compact. top-[72px] = hauteur exacte du Header (logo 48px + py-3 = 72px) */}
+      <nav className="sticky top-[72px] z-30 bg-white/95 backdrop-blur-md border-b border-gray-100">
         <div className="mx-auto max-w-5xl px-4 py-2 overflow-x-auto scrollbar-hide">
           <div className="flex gap-1 min-w-max justify-center">
             {groupedItems.map((cat) => {
