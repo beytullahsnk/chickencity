@@ -110,13 +110,11 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Video (desktop immediate / mobile after load) with fade-in */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-            className="order-1 lg:order-2"
-          >
+          {/* Video (desktop immediate / mobile after load). Pas d'animation
+              d'entrée sur ce conteneur : c'est l'élément LCP, il doit être
+              visible immédiatement pour ne pas retarder le paint (gain LCP
+              ~2s sur mobile d'après PageSpeed Insights). */}
+          <div className="order-1 lg:order-2">
             <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/40 aspect-[4/3] relative">
               {/* Poster image (toujours rendu pour LCP rapide). fetchPriority
                   explicite car c'est l'élément LCP sur mobile. */}
@@ -147,7 +145,7 @@ export function HeroSection() {
                 </video>
               )}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -68,7 +68,7 @@ export function PhotoStrip() {
             {repeated.map((item, i) => (
               <span
                 key={i}
-                className="mx-6 font-display text-xl sm:text-2xl lg:text-3xl tracking-widest flex items-center gap-4 text-primary"
+                className="mx-6 font-display text-xl sm:text-2xl lg:text-3xl tracking-widest flex items-center gap-4 text-secondary"
               >
                 <ChickenIcon />
                 <span className="font-bold">{item}</span>
