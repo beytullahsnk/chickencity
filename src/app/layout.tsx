@@ -15,18 +15,24 @@ import "./globals.css";
 
 const GTM_ID = "GTM-5MKQFTRG";
 
+// display: "optional" — élimine le FOUT qui causait du CLS sur le footer
+// (PageSpeed signalait 0.3 de CLS dû au swap de police Google vs système).
+// Si la police n'arrive pas en 100ms, on reste sur la fallback système (sans
+// swap plus tard). Next/font ajuste déjà les métriques fallback (size-adjust).
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
+  display: "optional",
+  adjustFontFallback: true,
 });
 
 const titanOne = Titan_One({
   variable: "--font-titan-one",
   subsets: ["latin"],
   weight: "400",
-  display: "swap",
+  display: "optional",
+  adjustFontFallback: true,
 });
 
 export const metadata: Metadata = {
