@@ -156,7 +156,7 @@ export function generateHeroVideoSchema() {
       "D\u00e9couvrez Chicken City, restaurant fast-food \u00e0 Mer (41500) : burgers gourmands, tacos g\u00e9n\u00e9reux, poulet pan\u00e9 fait maison et viandes halal. Livraison, sur place ou \u00e0 emporter.",
     thumbnailUrl: `${siteConfig.url}/images/hero-poster.webp`,
     contentUrl: `${siteConfig.url}/videos/hero.mp4`,
-    uploadDate: "2024-01-01",
+    uploadDate: "2026-01-01T00:00:00+01:00",
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
