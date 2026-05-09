@@ -254,7 +254,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "sides-nuggets",
     name: "Nuggets",
-    description: "x6 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
+    description: "x7 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
     price: "6,50\u20ac",
     image: "/images/menu/Sides - Nuggets.webp",
     category: "sides",
@@ -262,7 +262,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "sides-mozza",
     name: "Mozza",
-    description: "x6 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
+    description: "x7 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
     price: "6,50\u20ac",
     image: "/images/menu/Sides - Mozza Sticks.webp",
     category: "sides",
@@ -270,7 +270,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "sides-camembert",
     name: "Camembert",
-    description: "x6 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
+    description: "x7 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
     price: "6,50\u20ac",
     image: "/images/menu/Sides - Camembert.webp",
     category: "sides",
@@ -302,7 +302,7 @@ export const menuItems: MenuItem[] = [
   {
     id: "sides-jalapenos",
     name: "Jalapenos",
-    description: "x6 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
+    description: "x7 \u2192 6,50\u20ac | x10 \u2192 7,50\u20ac",
     price: "6,50\u20ac",
     image: "/images/menu/Sides - Japanoles.webp",
     category: "sides",
