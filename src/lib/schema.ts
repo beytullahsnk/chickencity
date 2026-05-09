@@ -154,9 +154,13 @@ export function generateHeroVideoSchema() {
     name: "Chicken City \u2014 Fast-Food Poulet Fait Maison \u00e0 Mer",
     description:
       "D\u00e9couvrez Chicken City, restaurant fast-food \u00e0 Mer (41500) : burgers gourmands, tacos g\u00e9n\u00e9reux, poulet pan\u00e9 fait maison et viandes halal. Livraison, sur place ou \u00e0 emporter.",
-    thumbnailUrl: `${siteConfig.url}/images/hero-poster.webp`,
+    thumbnailUrl: [`${siteConfig.url}/images/hero-poster.webp`],
     contentUrl: `${siteConfig.url}/videos/hero.mp4`,
+    // embedUrl = page HTML o\u00f9 la vid\u00e9o est lue avec un player (la homepage),
+    // requis par Google pour que la vid\u00e9o apparaisse en rich snippet vid\u00e9o.
+    embedUrl: `${siteConfig.url}/`,
     uploadDate: "2026-01-01T00:00:00+01:00",
+    duration: "PT0M30S", // 30 secondes (\u00e0 ajuster si la vid\u00e9o a une autre dur\u00e9e)
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,

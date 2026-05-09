@@ -19,6 +19,34 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // www.chickencity41.fr → chickencity41.fr (canonique sans www)
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.chickencity41.fr" }],
+        destination: "https://chickencity41.fr/:path*",
+        permanent: true,
+      },
+      // Legacy WordPress paths — 301 vers homepage pour nettoyer le SC
+      {
+        source: "/wp-admin/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wp-content/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wp-includes/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/wp-:file(.*).php",
+        destination: "/",
+        permanent: true,
+      },
       // Homepage redirect
       {
         source: "/home",
